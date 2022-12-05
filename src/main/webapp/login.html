@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="Component/style.css">
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #23242a;
+}
+</style>
+</head>
+<body>
+	<form action="LoginServlet" method="post">
+		<div class="box">
+			<div class="form">
+				<h2>Login</h2>
+				<div class="inputBox">
+					<input type="text" required="required"> <span>Username<input
+						type="text" name="name"></span> <i></i>
+				</div>
+				<div class="inputBox">
+					<input type="password" required="required"> <span>Password<input
+						type="password" name="password"></span> <i></i>
+				</div>
+				<div class="links">
+					<a href="#">Forgot Password</a> <a href="#">Singup</a>
+				</div>
+				<input type="submit" value="login">
+	</form>
+</body>
+</html>
